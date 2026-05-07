@@ -53,10 +53,10 @@ int main() {
     // Copy GPU -> CPU
     cudaMemcpy(h_C, d_C, n * sizeof(int), cudaMemcpyDeviceToHost);
 
-    printf("First 10 Results:\\n");
+    printf("First 10 Results: \n");
 
     for (int i = 0; i < 10; i++) {
-        printf("%d + %d = %d\\n", h_A[i], h_B[i], h_C[i]);
+        printf("%d + %d = %d \n", h_A[i], h_B[i], h_C[i]);
     }
 
     cudaFree(d_A);
