@@ -1,3 +1,7 @@
+// run on google colab or needs to install cuda toolkit and set up environment for cuda programming for this code to work in local environment.
+
+// first cell
+
 !pip install -q git+https://github.com/afnan47/cuda.git
 
 %load_ext nvcc_plugin
@@ -5,6 +9,8 @@
 !nvidia-smi
 
 
+
+// second cell
 %%cu
 
 #include <stdio.h>
